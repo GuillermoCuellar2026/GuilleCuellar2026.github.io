@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta etiquetas básicas requeridas -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Instrumentos Musicales - Inicio</title>
+</head>
+<body>
+
+    <!-- Header común para todas las páginas -->
+    <header>
+        <div class="user-actions">
+            <button type="button">Iniciar sesión</button>
+            <button type="button">Registro</button>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="cart.html">Carrito de la compra</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner">
+            <!-- Imagen adaptativa de la tienda usando srcset y sizes -->
+            <img src="img/tienda-mediana.jpg" 
+                 srcset="img/tienda-pequena.jpg 480w, img/tienda-mediana.jpg 800w, img/tienda-grande.jpg 1200w" 
+                 sizes="(max-width: 600px) 480px, (max-width: 1000px) 800px, 1200px" 
+                 alt="Foto interior de nuestra tienda de instrumentos musicales">
+        </div>
+    </header>
+
+    <!-- Cuerpo principal de la web semántica -->
+    <main>
+        <h1>Bienvenidos a Nuestra Tienda de Instrumentos</h1>
+
+        <!-- SECCIÓN 1: Artículos más vendidos -->
+        <section id="mas-vendidos">
+            <h2>Artículos más vendidos</h2>
+            
+            <article>
+                <img src="img/guitarra-mediana.jpg" srcset="img/guitarra-pequena.jpg 300w, img/guitarra-mediana.jpg 600w, img/guitarra-grande.jpg 900w" sizes="(max-width: 600px) 100vw, 33vw" alt="Guitarra Eléctrica">
+                <h3>Guitarra Eléctrica Pro</h3>
+                <p>Precio: 599€</p>
+            </article>
+
+            <article>
+                <img src="img/teclado-mediana.jpg" srcset="img/teclado-pequena.jpg 300w, img/teclado-mediana.jpg 600w, img/teclado-grande.jpg 900w" sizes="(max-width: 600px) 100vw, 33vw" alt="Teclado Musical">
+                <h3>Teclado Sintetizador 61 Teclas</h3>
+                <p>Precio: 350€</p>
+            </article>
+
+            <article>
+                <img src="img/bateria-mediana.jpg" srcset="img/bateria-pequena.jpg 300w, img/bateria-mediana.jpg 600w, img/bateria-grande.jpg 900w" sizes="(max-width: 600px) 100vw, 33vw" alt="Batería Acústica">
+                <h3>Batería Acústica Studio</h3>
+                <p>Precio: 850€</p>
+            </article>
+
+            <article>
+                <img src="img/bajo-mediana.jpg" srcset="img/bajo-pequena.jpg 300w, img/bajo-mediana.jpg 600w, img/bajo-grande.jpg 900w" sizes="(max-width: 600px) 100vw, 33vw" alt="Bajo Eléctrico">
+                <h3>Bajo Eléctrico de 4 Cuerdas</h3>
+                <p>Precio: 299€</p>
+            </article>
+        </section>
+
+        <!-- SECCIÓN 2: Categoría Relevante - Cuerdas -->
+        <section id="categoria-cuerdas">
+            <h2>Instrumentos de Cuerda</h2>
+            
+            <article>
+                <img src="img/violin-mediana.jpg" srcset="img/violin-pequena.jpg 300w, img/violin-mediana.jpg 600w, img/violin-grande.jpg 900w" sizes="(max-width: 600px) 100vw, 33vw" alt="Violín Clásico">
+                <h3>Violín Clásico 4/4</h3>
+                <p>Precio: 180€</p>
+            </article>
+
+            <article>
+                <img src="img/ukulele-mediana.jpg" srcset="img/ukulele-pequena.jpg 300w, img/ukulele-mediana.jpg 600w, img/ukulele-grande.jpg 900w" sizes="(max-width: 600px) 100vw, 33vw" alt="Ukulele Soprano">
+                <h3>Ukulele Soprano Madera</h3>
+                <p>Precio: 45€</p>
+            </article>
+
+            <article>
+                <img src="img/guitarra-acustica-mediana.jpg" srcset="img/guitarra-acustica-pequena.jpg 300w, img/guitarra-acustica-mediana.jpg 600w, img/guitarra-acustica-grande.jpg 900w" sizes="(max-width: 600px) 100vw, 33vw" alt="Guitarra Acústica">
+                <h3>Guitarra Acústica Folk</h3>
+                <p>Precio: 220€</p>
+            </article>
+
+            <article>
+                <img src="img/violonchelo-mediana.jpg" srcset="img/violonchelo-pequena.jpg 300w, img/violonchelo-mediana.jpg 600w, img/violonchelo-grande.jpg 900w" sizes="(max-width: 600px) 100vw, 33vw" alt="Violonchelo">
+                <h3>Violonchelo Avanzado</h3>
+                <p>Precio: 1200€</p>
+            </article>
+        </section>
+
+        <!-- SECCIÓN 3: Categoría Relevante - Percusión y Viento -->
+        <section id="categoria-percusion-viento">
+            <h2>Percusión y Viento</h2>
+            
+            <article>
+                <img src="img/flauta-mediana.jpg" srcset="img/flauta-pequena.jpg 300w, img/flauta-mediana.jpg 600w, img/flauta-grande.jpg 900w" sizes="(max-width: 600px) 100vw, 33vw" alt="Flauta Travesera">
+                <h3>Flauta Travesera Plateada</h3>
+                <p>Precio: 310€</p>
+            </article>
+
+            <article>
+                <img src="img/trompeta-mediana.jpg" srcset="img/trompeta-pequena.jpg 300w, img/trompeta-mediana.jpg 600w, img/trompeta-grande.jpg 900w" sizes="(max-width: 600px) 100vw, 33vw" alt="Trompeta en Sib">
+                <h3>Trompeta en Sib Standard</h3>
+                <p>Precio: 425€</p>
+            </article>
+
+            <article>
+                <img src="img/cajon-mediana.jpg" srcset="img/cajon-pequena.jpg 300w, img/cajon-mediana.jpg 600w, img/cajon-grande.jpg 900w" sizes="(max-width: 600px) 100vw, 33vw" alt="Cajón Flamenco">
+                <h3>Cajón Flamenco Artesanal</h3>
+                <p>Precio: 95€</p>
+            </article>
+
+            <article>
+                <img src="img/bongo-mediana.jpg" srcset="img/bongo-pequena.jpg 300w, img/bongo-mediana.jpg 600w, img/bongo-grande.jpg 900w" sizes="(max-width: 600px) 100vw, 33vw" alt="Bongós">
+                <h3>Set de Bongós de Madera</h3>
+                <p>Precio: 75€</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer común con enlaces públicos, nota de copyright, autor y año -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 - Todos los derechos reservados. Creado por: Guillermo Nicolas Cuellar Sartorio</p>
+    </footer>
+
+</body>
+</html>
