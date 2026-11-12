@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 6px;
+        }
+        header a, footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header a:hover, footer a:hover {
+            text-decoration: underline;
+        }
+        nav ul, footer ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .grid-productos {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        article {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .precio {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melodía Musical - Venta de Instrumentos</title>
+</head>
+<body>
+
+    <!-- HEADER: Cabecera común -->
+    <header>
+        <div class="logo-container">
+            <h1>Melodía Musical</h1>
+        </div>
+        
+        <!-- Botones de Inicio de sesión y registro -->
+        <div class="auth-buttons">
+            <a href="login.html">Iniciar Sesión</a>
+            <a href="registro.html">Registro</a>
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="cart.html">Carrito (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN: Contenido principal -->
+    <main>
+        <!-- Banner con foto de la tienda -->
+        <section class="banner">
+            <img src="img/banner-grande.jpg" 
+                 srcset="img/banner-pequenya.jpg 480w, 
+                         img/banner-mediana.jpg 768w, 
+                         img/banner-grande.jpg 1200w" 
+                 sizes="(max-width: 480px) 480px, (max-width: 768px) 768px, 1200px" 
+                 alt="Interior de nuestra tienda de instrumentos musicales">
+        </section>
+
+        <!-- Título de la página -->
+        <section class="page-title">
+            <h2>Bienvenidos a la mejor tienda de música</h2>
+            <p>Encuentra tu instrumento ideal al mejor precio.</p>
+        </section>
+
+        <!-- Sección de Artículos más vendidos (4 artículos) -->
+        <section class="productos-destacados">
+            <h3>Los más vendidos</h3>
+            <div class="grid-productos">
+                <!-- Artículo 1 -->
+                <article>
+                    <figure>
+                        <img src="img/guitarra-grande.jpg" 
+                             srcset="img/guitarra-pequenya.jpg 480w, img/guitarra-mediana.jpg 768w, img/guitarra-grande.jpg 1200w"
+                             sizes="(max-width: 480px) 150px, (max-width: 768px) 300px, 400px"
+                             alt="Guitarra Acústica Profesional">
+                        <figcaption>Guitarra Acústica Profesional</figcaption>
+                    </figure>
+                    <p class="precio">299.99 €</p>
+                </article>
+
+                <!-- Artículo 2 -->
+                <article>
+                    <figure>
+                        <img src="img/bateria-grande.jpg" 
+                             srcset="img/bateria-pequenya.jpg 480w, img/bateria-mediana.jpg 768w, img/bateria-grande.jpg 1200w"
+                             sizes="(max-width: 480px) 150px, (max-width: 768px) 300px, 400px"
+                             alt="Batería Acústica Completa">
+                        <figcaption>Batería Acústica Completa</figcaption>
+                    </figure>
+                    <p class="precio">650.00 €</p>
+                </article>
+
+                <!-- Artículo 3 -->
+                <article>
+                    <figure>
+                        <img src="img/teclado-grande.jpg" 
+                             srcset="img/teclado-pequenya.jpg 480w, img/teclado-mediana.jpg 768w, img/teclado-grande.jpg 1200w"
+                             sizes="(max-width: 480px) 150px, (max-width: 768px) 300px, 400px"
+                             alt="Teclado Digital 88 Teclas">
+                        <figcaption>Teclado Digital 88 Teclas</figcaption>
+                    </figure>
+                    <p class="precio">450.00 €</p>
+                </article>
+
+                <!-- Artículo 4 -->
+                <article>
+                    <figure>
+                        <img src="img/violin-grande.jpg" 
+                             srcset="img/violin-pequenya.jpg 480w, img/violin-mediana.jpg 768w, img/violin-grande.jpg 1200w"
+                             sizes="(max-width: 480px) 150px, (max-width: 768px) 300px, 400px"
+                             alt="Violín Estudiante 4/4">
+                        <figcaption>Violín Estudiante 4/4</figcaption>
+                    </figure>
+                    <p class="precio">180.00 €</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección 1 más relevante: Categoría de Cuerda -->
+        <section class="categoria-relevante">
+            <h3>Instrumentos de Cuerda Destacados</h3>
+            <div class="grid-productos">
+                <article>
+                    <figure>
+                        <img src="img/bajo-grande.jpg" 
+                             srcset="img/bajo-pequenya.jpg 480w, img/bajo-mediana.jpg 768w, img/bajo-grande.jpg 1200w"
+                             sizes="(max-width: 480px) 150px, (max-width: 768px) 300px, 400px"
+                             alt="Bajo Eléctrico 4 Cuerdas">
+                        <figcaption>Bajo Eléctrico 4 Cuerdas</figcaption>
+                    </figure>
+                    <p class="precio">320.00 €</p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/ukelele-grande.jpg" 
+                             srcset="img/ukelele-pequenya.jpg 480w, img/ukelele-mediana.jpg 768w, img/ukelele-grande.jpg 1200w"
+                             sizes="(max-width: 480px) 150px, (max-width: 768px) 300px, 400px"
+                             alt="Ukelele Soprano">
+                        <figcaption>Ukelele Soprano</figcaption>
+                    </figure>
+                    <p class="precio">45.00 €</p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/guitarra-clases-grande.jpg" 
+                             srcset="img/guitarra-clases-pequenya.jpg 480w, img/guitarra-clases-mediana.jpg 768w, img/guitarra-clases-grande.jpg 1200w"
+                             sizes="(max-width: 480px) 150px, (max-width: 768px) 300px, 400px"
+                             alt="Guitarra Clásica Española">
+                        <figcaption>Guitarra Clásica Española</figcaption>
+                    </figure>
+                    <p class="precio">120.00 €</p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/mandolina-grande.jpg" 
+                             srcset="img/mandolina-pequenya.jpg 480w, img/mandolina-mediana.jpg 768w, img/mandolina-grande.jpg 1200w"
+                             sizes="(max-width: 480px) 150px, (max-width: 768px) 300px, 400px"
+                             alt="Mandolina Folk">
+                        <figcaption>Mandolina Folk</figcaption>
+                    </figure>
+                    <p class="precio">195.00 €</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección 2 más relevante: Categoría de Viento -->
+        <section class="categoria-relevante">
+            <h3>Instrumentos de Viento Destacados</h3>
+            <div class="grid-productos">
+                <article>
+                    <figure>
+                        <img src="img/saxofon-grande.jpg" 
+                             srcset="img/saxofon-pequenya.jpg 480w, img/saxofon-mediana.jpg 768w, img/saxofon-grande.jpg 1200w"
+                             sizes="(max-width: 480px) 150px, (max-width: 768px) 300px, 400px"
+                             alt="Saxofón Alto Eb">
+                        <figcaption>Saxofón Alto Eb</figcaption>
+                    </figure>
+                    <p class="precio">780.00 €</p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/flauta-grande.jpg" 
+                             srcset="img/flauta-pequenya.jpg 480w, img/flauta-mediana.jpg 768w, img/flauta-grande.jpg 1200w"
+                             sizes="(max-width: 480px) 150px, (max-width: 768px) 300px, 400px"
+                             alt="Flauta Travesera de Plata">
+                        <figcaption>Flauta Travesera de Plata</figcaption>
+                    </figure>
+                    <p class="precio">340.00 €</p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/trompeta-grande.jpg" 
+                             srcset="img/trompeta-pequenya.jpg 480w, img/trompeta-mediana.jpg 768w, img/trompeta-grande.jpg 1200w"
+                             sizes="(max-width: 480px) 150px, (max-width: 768px) 300px, 400px"
+                             alt="Trompeta Sib en Do Lacada">
+                        <figcaption>Trompeta Sib Lacada</figcaption>
+                    </figure>
+                    <p class="precio">260.00 €</p>
+                </article>
+                <article>
+                    <figure>
+                        <img src="img/clarinet-grande.jpg" 
+                             srcset="img/clarinet-pequenya.jpg 480w, img/clarinet-mediana.jpg 768w, img/clarinet-grande.jpg 1200w"
+                             sizes="(max-width: 480px) 150px, (max-width: 768px) 300px, 400px"
+                             alt="Clarinete Sistema Boehm">
+                        <figcaption>Clarinete Sistema Boehm</figcaption>
+                    </figure>
+                    <p class="precio">290.00 €</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER: Pie de página común con enlaces y copyright -->
+    <footer>
+        <p>Enlaces públicos:</p>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="cart.html">Carrito</a></li>
+        </ul>
+        <p>&copy; 2026 Melodía Musical. Autor: Guillermo Nicolás Cuellar Sartorio. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
